@@ -7,5 +7,6 @@ Note that gmail has a limit of 200 emails per day per account. To be on a safer 
 the bot's capacity is 150 times the number of emails in `./emails/sender_emails.xlsx`.
 
 Edit the `./message/html.txt` and `./message/text.txt` with the email message that needs to be sent. Keep the content of text and html the same. Make sure to update both because in case if HTML message isn't rendered at the receiver's end, the text message of the same can be displayed.
+Emails' Subject should be added to `./message/subject.txt`
 
 Like what I do? Follow me on [Twitter](https://twitter.com/high_in_entropy) or connect with me on [LinkedIn](https://www.linkedin.com/in/viraj-mohile-70560b157/)!
