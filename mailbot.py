@@ -53,8 +53,12 @@ for i in range(req):
         receiver_email = receivers['Mail'][j]
         password = s_emails['Password'][i]
         
+        with open('./message/subject.txt', 'r') as file:
+            data = file.read()
+        subject = data.replace("\n", "")
+        
         message = MIMEMultipart("alternative")
-        message["Subject"] = "Freeco online Education!"
+        message["Subject"] = subject
         message["From"] = sender_email
         message["To"] = receiver_email
         
